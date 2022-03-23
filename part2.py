@@ -19,3 +19,33 @@ while i < 5:
     print(a*b)
     i+=1
     
+
+#символы и строки
+genome = 'ATGG'
+genome[0[='A'
+genome[-1]='G'
+
+i=1
+print(genome[i]) #T
+ 
+#строки неизменяем, нельзя присвоить новый символ
+
+#перечисление символов строки         
+genome = 'ATGG'
+for i in genome:
+         print(i) #выдаст все символы с новой строки
+         
+#методы у строк
+s='aTGcc'
+g='cc'
+
+s.upper #ATGCC
+s.lower #atgcc
+s.count(p) #сколько раз подстрока p встречается в строке s
+s.find(p)
+s.find('A') #строка A не входит в S
+s.replace('c', 'C') #заменяем маленькое c на большое C
+
+#можно использовать несколько вызовов функции
+s='AkjfD'
+s.upper().count('ak'.upper())  #результат 2       
