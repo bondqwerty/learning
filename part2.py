@@ -48,4 +48,12 @@ s.replace('c', 'C') #заменяем маленькое c на большое C
 
 #можно использовать несколько вызовов функции
 s='AkjfD'
-s.upper().count('ak'.upper())  #результат 2       
+s.upper().count('ak'.upper())  #результат 2    
+
+
+#slicind
+dna='ATGGCTCG'   
+dna[1:4] #TGG
+dna[-4:] #CTCG
+dna[1:-1:2] #идем с шагом 2/TGTC
+dna[::-1] #символы в обратном порядке
