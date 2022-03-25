@@ -57,3 +57,70 @@ dna[1:4] #TGG
 dna[-4:] #CTCG
 dna[1:-1:2] #идем с шагом 2/TGTC
 dna[::-1] #символы в обратном порядке
+
+
+#списки
+students= ['Masha','Sasha', 'Grisha']
+for student in students:
+         print('Hello'+student+'!')
+
+len(students) #3
+students[0] #Masha
+students[-1] #Grisha
+
+#операции со списками
+
+#сложение
+students= ['Masha','Sasha', 'Grisha']
+teachers= ['Tolya']
+
+students+teachers #Masha, Sasha, Grisha, Tolya
+
+#умножение
+[0,1]*4 #[0,1,0,1,0,1,0,1]
+         
+#изменение списков (списки можно изменять, а не перезаписывать элементы, как это было с другими типами переменных)
+students= ['Masha','Sasha', 'Grisha']
+students.append('Olga') #students= ['Masha','Sasha','Grisha','Olga']
+students+='Olga' #students= ['Masha','Sasha','Grisha','Olga','Olga']
+Пустой список students=[]
+
+students.insert(1,'Dima') #students= ['Masha','Dima','Sasha','Grisha','Olga','Olga']
+
+students= ['Masha','Sasha', 'Grisha']
+students.remove('Sasha') #students= ['Masha', 'Grisha']
+del students[0] #students= ['Grisha']
+
+#сортировка списка
+students= ['Masha','Sasha', 'Grisha']
+ordered_students=sorted(students) #['Grisha','Masha','Sasha']
+students.sort() #изменит саму переменную
+
+min() #минимальное значение в списке
+max() #максимальное значение в списке
+
+чтобы применять функции к спискам, они должны быть сравнимы
+
+#список в обратном порядке
+students= ['Masha','Sasha', 'Grisha']
+students.reverse() #students= ['Grisha','Sasha', 'Masha'] метод у списка, который изменяет сам список
+reversed(students) #позволяет сделать тоже самое, но не изменять переменную
+student[::-1] #изначальный список не изменится, будет копия списка, которая записана в противоположном порядке
+
+#поиск элемента в списке
+students= ['Masha','Sasha', 'Grisha']
+if 'Sasha' in students:
+         print('Sasha is here!') 
+if 'Ann' not in students:
+         print('Ann is out')
+
+ind=index.students('Sasha') #ind=1
+
+#генерация списков
+a=[0]*5 #[0,0,0,0,0]
+a=[0 for i in range(5)] #[0,0,0,0,0] list comprehension
+a=[i*i for i in range(5)] #[0,1,4,9,16]
+a=[int(i) for i in input().split()] 
+
+
+
