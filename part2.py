@@ -122,5 +122,13 @@ a=[0 for i in range(5)] #[0,0,0,0,0] list comprehension
 a=[i*i for i in range(5)] #[0,1,4,9,16]
 a=[int(i) for i in input().split()] 
 
+#двумерные списки
+a=[[1,2,3],[4,5,6],[7,8,9]]
+a[1] #[1,2,3]
+a[1][1] #5
+
+#генерация двумерных списков
+a=[[0]*n for i in range(n)]
+a=[[0 for j in range(n)] for i in range(n)]
 
 
