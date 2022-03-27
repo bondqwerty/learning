@@ -18,3 +18,5 @@ def solve():
         count+=1
         if count==n:
             break
+          
+ solve()
