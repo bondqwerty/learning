@@ -58,4 +58,20 @@ basket.discard(element)
 basket.clear()
 
 
+#Словари
+dict, {} #пустой словарь
+d = {'a': 234, 10: 100}
+print(d['a'])
+print(d[10])
+
+#Операции со словарями
+dictionary = {...}
+key in dictionary 
+key not in dictionary
+dictionary[key]=value
+dictionary[key]
+dictionary.get(key)
+del dictionary[key]
+
+
 
