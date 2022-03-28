@@ -42,4 +42,20 @@ print(a + b)  # Ошибка, переменные a и b не объявлен�
 
 #Глобальные переменные - переменные, которые объявлены вне функции
 
-  
+#Множества
+s=set() #создание пустого множества
+
+basket = {'orange','apple','apple','pear','apple'}
+print(basket) #orange, banana, pear, apple
+'orange' in basket #True
+'python' in basket #False
+
+
+#Операции с множествами
+basket.add(element)
+basket.remove(element)
+basket.discard(element)
+basket.clear()
+
+
+
