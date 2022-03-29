@@ -22,3 +22,21 @@ a A a
 Sample Output 2:
 
 a 3
+
+
+def count_words(str):
+    str = str.lower()
+    count = {}
+    words = str.split()
+    for word in words:
+        if word in count:
+            count[word] += 1
+        else:
+            count[word] = 1
+    for i in count:
+        print (i, count[i])
+        
+str = input()
+count_words(str)
+
+
