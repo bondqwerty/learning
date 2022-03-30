@@ -74,4 +74,10 @@ dictionary.get(key)
 del dictionary[key]
 
 
+#Модули
+from my_module import foo() #импортируем конкретную функцию
+from my_module import * #импортируем все
+from my_module import foo() as my_foo() #импортируем конкретную функцию и переназываем ее
+
+
 
